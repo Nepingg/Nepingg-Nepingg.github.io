@@ -69,7 +69,7 @@ nav{
   background-image: url("bg2.jpg");
   background-size: cover;
   width: 100%;
-  height:900px;
+  height:80vh;
 }
 nav a{
   color: #F7F7FF;
