@@ -1,0 +1,144 @@
+body {
+  background-color: #f3fff3;
+  margin:0;
+  align-content: center;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+#container{
+  margin:10vh auto;
+  background-color: lightgreen;
+  height:70vh;
+  width: 50vw;
+  display:grid ;
+  grid-template-areas:
+  "bar bar bar bar"
+  "text text text text"
+  "inputt inputt inputd inputd"
+  "add add del del"
+  ;
+  grid-template-rows: auto 1fr auto auto;
+  grid-template-columns:auto auto auto auto;
+  min-height: 70%;
+  border:3px solid black;
+
+}
+#searchbar{
+  grid-area: bar;
+  display:flex ;
+  margin:auto;
+}
+#lista{
+  grid-area: text;
+  background-color: darkgreen;
+  grid-column: span 4;
+  max-height: inherit;
+  box-sizing: content-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+#lista::-webkit-scrollbar {
+  display: none;
+}
+#add-task{
+  grid-area: add;
+  grid-column:span 2;
+  width: 100%;
+}
+#clear{
+  grid-area:del;
+  grid-column:span 2;
+  width: 100%;
+}
+#todo{
+  grid-area:todo;
+  background-color: lightgreen;
+  border:1px solid #ffffff;
+
+
+}
+#data{
+  grid-area:inputd;
+  background-color: lightgreen;
+  grid-column:span 2;
+  border:1px solid #ffffff;
+  width: 100%;
+}
+p{
+  background-color: burlywood;
+  border:1px solid black;
+}
+#searchtext{
+  border-radius: 200px;
+  border:1px solid darkgray;
+}
+#assignment{
+  grid-area: inputt;
+  grid-column:span 2;
+  width: 100%;
+}
+#save:hover{
+  cursor: grab;
+}
+.task{
+  margin: 10px auto;
+  display:grid ;
+  grid-template-areas: "box text dni delete";
+  grid-template-columns: 1fr 4fr 4fr 1fr;
+  background-color: mediumseagreen;
+  grid-template-rows: 1fr;
+  width: 100%;
+  border-radius: 90px;
+  border:1px solid black;
+
+
+
+}
+.task:nth-child(even){
+  background-color: #67c667;
+
+}
+.check{
+  grid-area: box;
+
+}
+.task-date{
+  grid-area: dni;
+}
+.task-text{
+  grid-area: text;
+}
+.delete{
+  all: unset;
+  grid-area: delete;
+
+  border-radius: 90px;
+}
+
+input[type="checkbox"]{
+  accent-color: #bfff75;
+
+}
+input[type="checkbox"]:checked {
+  accent-color: #bfff75;
+
+}
+button{
+  font-size: 120%;
+  font-weight: bold;
+}
+input[type="date"]{
+  text-align: center;
+  font-weight: bold;
+}
+mark{
+  background-color: lightyellow;
+}
+
+
+
+
