@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Michał Misiukiewicz (57878) - PTW LAB C</title>
+
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="leaflet-1.9.4/leaflet.css" />
+    <script src="leaflet-1.9.4/leaflet-src.js"></script>
+    <script src="leaflet-1.9.4/leaflet-providers.js"></script>
+    <script src="leaflet-1.9.4/leaflet-image.js"></script>
+</head>
+<body>
+<div id="container">
+    <div id="div1"> <h3>Mapa</h3>
+    <div id="map"></div>
+
+<button id="getLocation">Get Current Location</button>
+<button id="saveButton">Save Raster Map</button>
+<br>
+    </div>
+    <div id="div2"><h3>Zapisana Mapa</h3>
+<canvas id="rasterMap" width="400" height="400"></canvas>
+
+<div id="positionInfo">
+    <strong>Latitude:</strong> <span id="latitude"></span><br>
+    <strong>Longitude:</strong> <span id="longitude"></span><br>
+</div>
+    </div>
+    <div id="div3"><h3>Puzzelki</h3>
+        <div id="table"></div>
+    </div>
+
+</div>
+</body>
+</html>
+
