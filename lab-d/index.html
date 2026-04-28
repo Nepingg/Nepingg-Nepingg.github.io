@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Michał Misiukiewicz (57878) - PTW LAB D</title>
+
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="search-box">
+        <div class="input-wrapper">
+            <input type="text" id="cityInput" placeholder="Wpisz nazwę miasta...">
+            <button id="addFavBtn" title="Dodaj do ulubionych">⭐</button>
+
+            <div id="list" class="lista"></div>
+        </div>
+        <button id="weatherBtn">Sprawdź</button>
+    </div>
+    <div id="container">
+        <button id="prevBtn" class="carousel-btn">❮</button>
+        <div id="currentWeather" class="result-section"></div>
+        <div id="forecastWeather" class="result-section" style="display: none;">
+            <h2>Prognoza 5-dniowa</h2>
+            <div class="carousel">
+                 <div id="forecastContent" class="carousel-content">
+            </div>
+
+        </div>
+
+        </div><button id="nextBtn" class="carousel-btn">❯</button>
+        </div>
+</body>
+</html>
