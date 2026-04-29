@@ -305,7 +305,7 @@ const favApp = new Favorites();
 favApp.draw();
 
 const app = new WeatherApp(
-  '',
+  '740eaa5e6a285e3493cb2c059ee7d4e1',
   '#currentWeather',
   '#forecastWeather',
   '#forecastContent'
